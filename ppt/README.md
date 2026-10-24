@@ -13,7 +13,7 @@
 
 - **PowerPoint File (.pptx)**: [Download `Sleep_Health_Cluster_Computing_Presentation.pptx`](./Sleep_Health_Cluster_Computing_Presentation.pptx)
 - **Format**: 16:9 Modern Widescreen (1920 × 1080)
-- **Theme**: Executive Midnight Slate & Tech Cyan/Orange Accents (Non-AI, Senior Architect Style)
+- **Theme**: Clean Academic Black & White with Subtle Slate Accents & Official LPU Branding (Senior Faculty & Academic Defense Style — Zero Code Snippets, Large Readable Fonts, Standalone Empirical Visuals)
 - **Branding**: Official Lovely Professional University logo branded on every slide
 
 ---
@@ -91,7 +91,7 @@ Total Slides: 13 Slides
 </p>
 
 - **Category**: `DATA QUALITY & EXPLORATORY DATA ANALYSIS`
-- **Key Visuals**: Parallel Spark SQL null verification code + console screenshot; Risk category distribution bar chart screenshot.
+- **Key Visuals**: Parallel Spark SQL null verification and audit breakdown card on left; High-resolution empirical class distribution chart on right.
 - **Verbatim Speaker Script** *(45 sec)*:
   > *"Slide 6 presents our actual notebook execution. On the left is our distributed missing value audit. Rather than looping through columns sequentially in Python, we constructed a single Spark SQL select expression containing 32 conditional aggregations. Spark distributes this query across all partition blocks, verifying in parallel that zero null values exist across the entire 100,000-record dataset. On the right is the class skew visualization showing the steep gradient between healthy individuals and the minority severe risk tier."*
 
@@ -115,7 +115,7 @@ Total Slides: 13 Slides
 </p>
 
 - **Category**: `FEATURE ENGINEERING & PREPROCESSING`
-- **Key Visuals**: Target leakage explanation on left; MLlib Pipeline stages and code screenshot on right.
+- **Key Visuals**: Target leakage prevention rationale card on left; 5-stage distributed MLlib pipeline breakdown card on right.
 - **Verbatim Speaker Script** *(50 sec)*:
   > *"Slide 8 highlights our data engineering rigor: preventing target leakage. In medical machine learning, models frequently achieve fake 99% accuracy because retrospective symptom indicators are inadvertently fed into training. In this dataset, felt_rested and cognitive_performance_score are recorded the morning after sleep. If a patient feels unrefreshed or has a collapsed cognitive score, they already have active symptoms of the disorder! Including them creates retrospective target leakage. In prospective triage, you only have pre-sleep baseline habits and overnight vitals. We stripped these columns along with person_id and fed the remaining 28 features into our StringIndexer, OneHotEncoder, and VectorAssembler pipeline."*
 
@@ -127,7 +127,7 @@ Total Slides: 13 Slides
 </p>
 
 - **Category**: `MODEL TRAINING & INFERENCE DYNAMICS`
-- **Key Visuals**: Why Random Forest on Spark; 50 trees, maxDepth 8 configuration; Model fit and test predictions preview screenshot.
+- **Key Visuals**: Why Random Forest on Spark rationale card on left; 50 trees, maxDepth 8 configuration specs card on right.
 - **Verbatim Speaker Script** *(45 sec)*:
   > *"Why did we choose RandomForestClassifier in Spark MLlib? First, clinical biomarker interactions are highly non-linear—for example, high stress combined with high evening blue-light screen exposure triggers disproportionate risk. Decision trees capture non-linear feature splits without requiring min-max scaling. Second, Random Forest is embarrassingly parallel: each decision tree is grown independently. Spark's task scheduler distributes tree-building tasks across all CPU worker threads concurrently. We trained 50 trees with a maximum depth of 8 on 80,000 records and generated predictions on 20,000 unseen hold-out patients."*
 
@@ -139,7 +139,7 @@ Total Slides: 13 Slides
 </p>
 
 - **Category**: `RESULTS & QUANTITATIVE EVALUATION`
-- **Key Visuals**: 4 large KPI cards (Accuracy: 82.43%, F1: 81.32%, Precision: 80.35%, Recall: 82.43%); Spark evaluation console screenshot; Performance bar chart screenshot.
+- **Key Visuals**: 4 top KPI cards (Accuracy: 82.43%, F1: 81.32%, Precision: 80.35%, Recall: 82.43%); Evaluation metric clinical interpretation card on left; High-resolution test performance bar chart on right.
 - **Verbatim Speaker Script** *(50 sec)*:
   > *"Here are our primary empirical results evaluated on the 20,000 unseen hold-out test set using PySpark's MulticlassClassificationEvaluator. Overall Accuracy reached 82.43%. Weighted F1-Score reached 81.32%. Weighted Precision reached 80.35%, and Weighted Recall reached 82.43%. Our model outperforms the naive majority baseline of 54.16% by more than 28 percentage points. The close balance between precision (80.35%) and recall (82.43%) proves that our ensemble minimizes false alarms while maintaining high detection sensitivity for high-risk patients."*
 
