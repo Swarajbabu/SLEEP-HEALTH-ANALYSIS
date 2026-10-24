@@ -238,23 +238,25 @@ SLEEP-HEALTH-ANALYSIS/
 │   ├── download (2).png                   # Average Cognitive Performance by Risk Category
 │   ├── download (3).png                   # Average Sleep Duration (Hours) by Risk Category
 │   ├── download.png                       # Average Sleep Quality Score by Risk Category
-│   ├── Screenshot 2026-10-24 175438.png   # PySpark Installation & SparkSession Setup
-│   ├── Screenshot 2026-10-24 175501.png   # Dataset Upload & Verification
-│   ├── Screenshot 2026-10-24 175526.png   # Distributed Schema Inspection
-│   ├── Screenshot 2026-10-24 175553.png   # Parallel Missing Value Audit
-│   ├── Screenshot 2026-10-24 175606.png   # Target Risk Class Distribution Table
-│   ├── Screenshot 2026-10-24 175643.png   # Risk Category Distribution Bar Chart
-│   ├── Screenshot 2026-10-24 175825.png   # Clinical Biomarker Averages Table
-│   ├── Screenshot 2026-10-24 180209.png   # MLlib Feature Pipeline Configuration
-│   ├── Screenshot 2026-10-24 180218.png   # Random Forest Classifier Definition
-│   ├── Screenshot 2026-10-24 180227.png   # Model Fitting & Sample Test Predictions
-│   ├── Screenshot 2026-10-24 180234.png   # Multiclass Classification Evaluation Output
-│   └── Screenshot 2026-10-24 180251.png   # Model Performance Bar Chart
+│   ├── lpu_logo.png                       # Official Lovely Professional University transparent logo
+│   └── Screenshot 2026-10-24 *.png        # Notebook execution & pipeline verification screenshots
+├── ppt/                                   # Academic Defense Presentation & Slide Previews
+│   ├── slides/                            # High-resolution 1080p slide renders (Slide1.PNG to Slide13.PNG)
+│   ├── README.md                          # Complete presentation manual, speaker scripts & viva Q&A
+│   └── Sleep_Health_Cluster_Computing_Presentation.pptx  # Master 13-slide PowerPoint presentation
 ├── Project Report.pdf                     # Complete 16-page formal academic project report
 ├── Project.ipynb                          # Executable Google Colab / PySpark Jupyter Notebook
 ├── sleep_health_dataset.csv               # 100,000-record sleep health dataset (14.87 MB)
 └── README.md                              # Comprehensive project documentation
 ```
+
+---
+
+## 📽️ Project Presentation & Defense Deck
+
+An executive-level, 13-slide academic presentation deck has been designed and stored in the [`ppt/`](./ppt/) directory:
+- **Direct Download**: [`ppt/Sleep_Health_Cluster_Computing_Presentation.pptx`](./ppt/Sleep_Health_Cluster_Computing_Presentation.pptx)
+- **Slide Previews & Speaker Scripts**: [`ppt/README.md`](./ppt/README.md) contains full 1080p slide renders, verbatim 10-minute presentation transcripts, and the **Top 10 Faculty Viva Voce Questions & Model Answers**.
 
 ---
 
